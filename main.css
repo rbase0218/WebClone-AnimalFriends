@@ -1,0 +1,433 @@
+body {
+    margin: 0
+}
+
+img {
+    display : block;
+    vertical-align : bottom;
+    margin : 5px;
+}
+h4 {
+    margin : 10px;
+    font-size : 14px;
+}
+
+section{
+    display : flex;
+    flex-direction : row;
+    height : 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#BGImage {
+    background-image: url("resource/main_back_.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#GameInfo{
+    background-color: white;
+    flex-direction : row;
+    height : 85vh;
+}
+
+#LinkView {
+    background-color : blanchedalmond;
+    height : 85vh;
+}
+
+#Coupon {
+    background-size : cover;
+    background-image : url("resource/coupon.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height : 120vh;
+}
+
+.NaviBar-Box {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    position: fixed;
+    border-bottom : 1px solid black;
+    z-index : 1;
+    top: 0;
+}
+
+.NaviBar-LogoText{
+    display : flex;
+    flex-direction : row;
+    padding : 10px;
+    margin : 10px;
+}
+
+.NaviBar-Hamburger{
+    display : none;
+}
+
+.NaviBar-Hamburger-Menu{
+    display : none;
+    position: relative;
+    background : transparent;
+    border : none;
+    width : 40px;
+}
+
+.Hamburger-Line{
+    position : absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: gray;
+    border-radius: 4px;
+}
+
+.Hamburger-Line:nth-child(1){
+    top: 10px;
+}
+.Hamburger-Line:nth-child(2){
+    top: 25px;
+}
+.Hamburger-Line:nth-child(3){
+    top: 40px;
+}
+
+.NaviBar-NaviGroup{
+    display : flex;
+    flex-direction : row;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+.NaviBar-GroupSegment{
+    text-align : center;
+    font-size : 17px;
+    padding-left: 150px;
+}
+
+.NaviBar-GroupSegment a {
+    text-align : center;
+    text-decoration: none;
+    color : black;
+}
+
+.GameView-Group {
+    display : flex;
+    flex-direction : row;
+    padding-left : 5%;
+    align-items: center;
+}
+
+.GameView-Group-Text{
+    margin-left : 8%;
+    width : 100%;
+}
+
+.GameView-Group-Image-Group{
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+}
+
+.GameView-Group-Image-Group-Segment > img{
+    background-repeat: no-repeat;
+    width : 341px;
+    height : auto;
+}
+
+.GameView-Group-Text-Launch-Store{
+    display : flex;
+    align-items: center;
+}
+
+.GameView-Group-Text-Feature{
+    padding-top : 5%;
+
+}
+
+.GameView-Group-Text-Launch-Store-Image > img{
+    margin : 0;
+}
+
+.GameView-Group-Text-Launch > h3{
+    margin :0;
+    font-size : 23px;
+    height : 30px;
+}
+
+.GameView-Group-Text-Feature > h4 {
+    font-size : 17px;
+    margin : 0;
+    margin-bottom : 3%;
+}
+
+.GameView-Group-Text-Feature > h5 {
+    margin : 0;
+    font-size : 13px;
+
+}
+
+.Link-Main {
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+}
+
+.Link-Main-Upper{
+    margin-bottom: 30px;
+}
+.Link-Main-Down-Seg {
+    display : flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+    #LinkView{
+        height : 130vh;
+    }
+    #GameInfo{
+        height : 130vh;
+        flex-direction : column;
+    }
+    #Coupon{
+        height : 150vh;
+    }
+    .Link-Main-Down-Seg {
+        display : flex;
+        flex-direction : column;
+        justify-content: center;
+    }
+
+    .GameView-Group{
+        flex-direction: column;
+    }
+
+    .GameView-Group-Text-Launch-Main{
+        padding-top : 8%;
+    }
+    .GameView-Group-Image-Group-Segment > img
+    {
+        width : 500px;
+        height : auto;
+    }
+}
+
+@media (max-width: 1250px) {
+    .NaviBar-GroupSegment {
+        font-size: 15px;
+        text-align: center;
+        padding-left: 100px;
+    }
+    .NaviBar-LogoText{
+        display : flex;
+        flex-direction : row;
+    }
+}
+
+@media (max-width: 925px){
+    .NaviBar-GroupSegment {
+        display : none;
+    }
+    .NaviBar-LogoText{
+        width : 100%;
+    }
+
+    .NaviBar-Hamburger-Menu{
+        display : flex;
+        cursor : pointer;
+    }
+
+    .NaviBar-Hamburger-Menu:checked~.NaviBar-Box{
+        max-height: 450px;
+    }
+
+    .NaviBar-Hamburger{
+        display : flex;
+        padding-left : 70%;
+    }
+}
+
+@media (max-width : 720px){
+    .NaviBar-Hamburger{
+        padding-left : 50%;
+    }
+}
+
+.Link-Main-Down-Seg-Resource{
+    margin-left : 15px;
+}
+
+.Link-Main-Down-Seg-Resource-SImage > img{
+    margin-top: 20px;
+    height: 152px;
+    width : 304px;
+}
+
+.Link-Main-Down-Seg-Resource-TImage > img{
+    margin-top: 20px;
+    height: 77.61px;
+    width : 304px;
+}
+
+.Coupon-Board{
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Coupon-Board-Top-Text{
+    font-size : 36px;
+    margin-bottom : 10%;
+}
+
+.Coupon-Board-Middle{
+    display : flex;
+    flex-direction : column;
+    border : solid 5px black;
+    border-radius : 40px;
+    background-color : #8ddcfe;
+    width : 100%;
+    height : fit-content;
+    padding : 25%;
+    padding-top : 45px;
+    padding-bottom : 45px;
+}
+
+@media(max-width:1000px){
+    .Coupon-Board-Middle{
+        padding : 10%;
+        padding-top : 20px;
+        padding-bottom : 20px;
+    }
+}
+
+@media(max-width:870px){
+    .Coupon-Board-Middle{
+        width:80%;
+        padding : 0;
+        padding-top : 25px;
+        padding-bottom :25px;
+    }
+
+    .Coupon-Board-Middle-BG-CouponNumber, .Coupon-Board-Middle-BG-GameNickName {
+        font-size : 14px;
+    }
+
+    .Coupon-Board-InputField > input{
+        background-size : contain;
+        background-position : center;
+        width : 100%;
+    }
+}
+
+.Coupon-Board-Middle-List{
+    display : flex;
+    flex-direction : column;;
+    height: 100%;
+    width: 100%;
+}
+
+.Coupon-Board-Middle-BG{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    width : 100%;
+    height : 100%;
+}
+
+.Coupon-Board-Middle-BG-CouponNumber , .Coupon-Board-Middle-BG-GameNickName{
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    text-align: center;
+}
+
+.Coupon-InputField{
+    background : transparent;
+    border : none;
+    background-image : url("resource/Component 10 – 1.png");
+    background-repeat: no-repeat;
+    height : 76px;
+    width : 500px;
+    background-size : cover;
+    text-align: center;
+    font-size : 24px;
+    z-index: 1;
+
+}
+
+.Coupon-Board-Middle-BG-SendButton{
+    display : flex;
+    padding-top : 5%;
+}
+
+.Coupon-Send-Button{
+    display : flex;
+    cursor : pointer;
+    flex-direction: row;
+    background: transparent;
+    background-image: url("resource/couponbox.png");
+    background-size: cover;
+    border : none;
+    width: 232px;
+    height: 80px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.Coupon-Board-Bottom-Main-Text{
+    display:flex;
+    flex-direction : row;
+    color : gray;
+    justify-content: center;
+    margin-top : 10%;
+    margin-bottom : 5%;
+    font-size : 21px;
+}
+
+.Coupon-Board-Bottom-Desc-Text{
+    color : gray;
+    font-size : 19px;
+}
+
+
+
+.Footer-Group {
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: center;
+    margin : 30px;
+}
+
+.Footer-Group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.Footer-Group-Logo {
+    margin-left: 30%;
+}
+
+@media (max-width: 1000px) {
+    .Footer-Group {
+        display : flex;
+        flex-direction : column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Footer-Group-Logo {
+        margin-left: 0;
+    }
+}
+
